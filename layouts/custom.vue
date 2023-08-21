@@ -23,12 +23,12 @@
                       Inmuebles a Alquilar o Vender
                   </a>
 
-                    <UDropdown :items="items" mode="hover" :popper="{ placement: 'bottom-start' }">
-                      <UButton 
-                        class="px-3 py-2 rounded-md text-sm font-medium" 
-                        label="Inmuebles a Alquilar o Vender" 
-                        trailing-icon="i-heroicons-chevron-down-20-solid" />
-                    </UDropdown>
+                  <UDropdown :items="items" mode="hover" :popper="{ placement: 'bottom-start' }">
+                    <UButton 
+                      class="px-3 py-2 rounded-md text-sm font-medium" 
+                      label="Inmuebles a Alquilar o Vender" 
+                      trailing-icon="i-heroicons-chevron-down-20-solid" />
+                  </UDropdown>
                 </div>
               </div>
             </div>
