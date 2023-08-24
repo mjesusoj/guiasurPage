@@ -3,12 +3,20 @@
     <NuxtLayout name="custom">
       <template #header /> 
       <template #navbar />
-        The rest of the page
+      <template #sobre-la-empresa>
+        <guiasurInfo />
+      </template>
+      <template #inmuebles>
+        <inmuebles />
+      </template>
     </NuxtLayout>
   </div>
 </template>
 
 <script setup>
+  import guiasurInfo from '../pages/guiasurInfo.vue'
+  import inmuebles from '../pages/inmuebles.vue'
+
   definePageMeta({
     layout: false,
   });

@@ -5,6 +5,12 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
   ],
+  css: [
+    'maz-ui/css/main.css',
+  ],
+  build: {
+    transpile: ['maz-ui'], // ⚠️ important ⚠️
+  },
   colorMode: {
     classSuffix: ''
   },

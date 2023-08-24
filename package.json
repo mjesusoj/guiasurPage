@@ -16,5 +16,7 @@
     "@types/node": "^18.17.3",
     "nuxt": "^3.6.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "maz-ui": "^3.9.0"
+  }
 }

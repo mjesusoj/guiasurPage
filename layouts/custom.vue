@@ -35,7 +35,9 @@
           </div>
         </nav>
       </slot>
+      <slot name="sobre-la-empresa" />
     </main>
+    <slot name="inmuebles" />
   </div>
 </template>
 
