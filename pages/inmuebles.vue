@@ -31,6 +31,11 @@
 <script lang="ts" setup>
   import MazCard from 'maz-ui/components/MazCard'
 
+  import { trackEvent } from "@aptabase/web";
+
+  trackEvent("app_started");
+  trackEvent("page_view", { name: "Inmuebles", path: "#inmuebles" });
+
   /* definePageMeta({
     layout: false,
   }); */

@@ -19,6 +19,10 @@
 <script lang="ts" setup>
   import MazCard from 'maz-ui/components/MazCard'
 
+  import { trackEvent } from "@aptabase/web";
+
+  trackEvent("app_started");
+  trackEvent("page_view", { name: "Sobre la Empresa", path: "#sobre-la-empresa" });
   /* definePageMeta({
     layout: false,
   }); */
