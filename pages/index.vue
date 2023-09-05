@@ -9,11 +9,15 @@
       <template #inmuebles>
         <inmuebles />
       </template>
+      <template #formulario-de-contacto>
+        <formulario />
+      </template>
     </NuxtLayout>
   </div>
 </template>
 
 <script setup>
+  import formulario from '../pages/formulario.vue'
   import guiasurInfo from '../pages/guiasurInfo.vue'
   import inmuebles from '../pages/inmuebles.vue'
 

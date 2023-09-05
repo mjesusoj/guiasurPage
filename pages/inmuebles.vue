@@ -1,30 +1,53 @@
 <template>
-    <div class="grid grid-cols-6 gap-4">
-        <div id="inmuebles" class="col-end-4 col-span-2  mt-5">
-          <h3 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Inmuebles a alquilar o vender</h3>
-          <MazCard
-            :images="['logo-guiasur.jpg']"
-            :gallery-height="200"
-            zoom
-          >
-            <template #title>
-              <h3 style="margin: 0">
-                Oficina (Alquiler / Venta)
-              </h3>
-            </template>
-            <template #subtitle>
-              <span>
-                  Calle Astronomia, 1 - TORRE 3, PLT 7, MODULO 1, Sevilla, 41015 (Torneo Parque Empresarial)
-              </span>
-            </template>
-            <template #content>
-              <p class="maz-text-muted" style="margin: 0; margin-top: 20px">
-                  Este inmueble es una oficina ubicada en el parque empresarial de Torneo en Sevilla. Tiene 100m2 
-                  y muy buena localización
-              </p>
-            </template>
-          </MazCard>
-        </div>
+    <div id="inmuebles" class="col-end-4 col-span-2 mt-5">
+      <h2 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Oficina en Alquiler o Venta</h2>
+      <MazCard
+        :images="['logo-guiasur.jpg']"
+        :height="200"
+        zoom
+      >
+        <template #title>
+          <h3 style="margin: 0">
+            Oficina (Alquiler / Venta)
+          </h3>
+        </template>
+        <template #subtitle>
+          <span>
+              Calle Astronomia, 1 - TORRE 3, PLT 7, MODULO 1, Sevilla, 41015 (Torneo Parque Empresarial)
+            </span>
+          </template>
+          <template #content>
+            <p class="maz-text-muted" style="margin: 0; margin-top: 20px">
+              Este inmueble es una oficina ubicada en el parque empresarial de Torneo en Sevilla. Tiene 100m2 
+              y muy buena localización
+            </p>
+        </template>
+      </MazCard>
+    </div>
+    <div class="col-span-2 mt-5 cardOther">
+      <h2 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Venta de Locales, Oficinas y Plazas de Garaje</h2>
+      <MazCard
+        :images="images"
+        :height="200"
+        zoom
+      >
+        <template #title>
+          <h3 style="margin: 0">
+            Venta de Locales Comerciales, Oficinas y Plazas de Garaje en Arahal
+          </h3>
+        </template>
+        <template #subtitle>
+          <span>
+              Calle Corredera 19, Arahal (Sevilla)
+          </span>
+        </template>
+        <template #content>
+          <p class="maz-text-muted" style="margin: 0; margin-top: 20px">
+              Se venden locales comerciales, oficinas y plazas de garaje en el centro de Arahal, interesados
+              mandar correo electrónico al correo de la imagen o rellenar el formulario.
+          </p>
+        </template>
+      </MazCard>
     </div>
 </template>
 
@@ -33,10 +56,22 @@
 
   import { trackEvent } from "@aptabase/web";
 
+  const images = [
+    { src: './corredera-images/corredera-1.jpg', alt: 'Fachada' },
+    { src: './corredera-images/corredera-2.jpg', alt: 'Planta Garaje -1' },
+    { src: './corredera-images/corredera-3.jpg', alt: 'Planta Garaje -2' },
+    { src: './corredera-images/corredera-4.jpg', alt: 'Planta Garaje -3' },
+    { src: './corredera-images/corredera-5.jpg', alt: 'Azotea' },
+    { src: './corredera-images/corredera-6.jpg', alt: 'Azotea 2' },
+    { src: './corredera-images/corredera-7.jpg', alt: 'Azotea 3' },
+  ]
+
   trackEvent("app_started");
   trackEvent("page_view", { name: "Inmuebles", path: "#inmuebles" });
-
-  /* definePageMeta({
-    layout: false,
-  }); */
 </script>
+
+<style scoped>
+    .cardOther {
+        display: grid;
+    }
+</style>

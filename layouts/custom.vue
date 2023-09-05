@@ -22,13 +22,9 @@
                   <a title="Inmuebles a Alquilar o Vender" href="#inmuebles" class="text-gray-300 hover:bg-blue-300 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">
                       Inmuebles a Alquilar o Vender
                   </a>
-
-                  <UDropdown :items="items" mode="hover" :popper="{ placement: 'bottom-start' }">
-                    <UButton 
-                      class="px-3 py-2 rounded-md text-sm font-medium" 
-                      label="Inmuebles a Alquilar o Vender" 
-                      trailing-icon="i-heroicons-chevron-down-20-solid" />
-                  </UDropdown>
+                  <a title="Inmuebles a Alquilar o Vender" href="#formulario-de-contacto" class="text-gray-300 hover:bg-blue-300 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                      Formulario de contacto
+                  </a>
                 </div>
               </div>
             </div>
@@ -36,24 +32,16 @@
         </nav>
       </slot>
       <slot name="sobre-la-empresa" />
+      <slot name="inmuebles" />
+      <slot name="formulario-de-contacto" />
     </main>
-    <slot name="inmuebles" />
+    <footer class="">
+      <slot name="footer">
+        <p class="text-2xl text-gray-400 px-3 py-2 rounded-md font-bold bg-clip-text text-center mt-5 mb-5">©️ Guiasur XXI 2023</p>
+      </slot>
+    </footer>
   </div>
 </template>
-
-<script setup>
-  const items = [
-    [{
-      label: 'Oficina en Sevilla - Torneo',
-    }],
-    [{
-      label: 'Solar en Antequera',
-    }],
-    [{
-      label: 'Locales y aparcamientos en Arahal',
-    }]
-  ]
-</script>
 
 <style lang="postcss">
   body {
