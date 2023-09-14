@@ -24,7 +24,7 @@
         </template>
       </MazCard>
     </div>
-    <div class="col-span-2 mt-5 cardOther">
+    <div class="col-12 col-span-2 mt-5 cardOther">
       <h2 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Venta de Locales, Oficinas y Plazas de Garaje</h2>
       <MazCard
         :images="images"
