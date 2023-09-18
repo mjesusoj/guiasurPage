@@ -5,9 +5,9 @@
         <h1 class="text-4xl text-sky-500 font-bold bg-clip-text text-center mb-4">Guiasur Inmobiliaria</h1>
       </slot>
     </header>
-    <main class="grid grid-cols-6 gap-4">
+    <main>
       <slot name="navbar">
-        <nav class="col-start-2 col-span-4 flex md:justify-center mt-5 md:mt-0">
+        <nav class="col-10 col-start-2 col-span-4 flex md:justify-center mt-5 md:mt-0">
           <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="flex items-center md:hidden"></div>
             <div class="flex-1 flex items-center justify-center md:items-stretch md:justify-start">
@@ -31,9 +31,15 @@
           </div>
         </nav>
       </slot>
-      <slot name="sobre-la-empresa" />
-      <slot name="inmuebles" />
-      <slot name="formulario-de-contacto" />
+      <div class="grid grid-cols-1 lg:grid-cols-6 gap-4">
+        <slot name="sobre-la-empresa" />
+      </div>
+      <div class="flex flex-col md:flex-row justify-center gap-4 md:p-[1%] p-[3%]">
+        <slot name="inmuebles" />
+      </div>
+      <div class="xl:flex justify-center gap-4 md:p-[1%] p-[3%]">
+        <slot name="formulario-de-contacto" />
+      </div>
     </main>
     <footer class="">
       <slot name="footer">

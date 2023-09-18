@@ -1,5 +1,5 @@
 <template>
-    <div id="formulario-de-contacto" class="col-end-4 col-span-2 mt-5">
+    <div id="formulario-de-contacto" class="mt-5">
         <h3 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Formulario de contacto</h3>
         <UForm
             ref="form"

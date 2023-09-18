@@ -1,5 +1,5 @@
 <template>
-    <div id="inmuebles" class="col-end-4 col-span-2 mt-5">
+    <div id="inmuebles" class="lg:basis-1/3 mt-5">
       <h2 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Oficina en Alquiler o Venta</h2>
       <MazCard
         :images="['logo-guiasur.jpg']"
@@ -24,7 +24,7 @@
         </template>
       </MazCard>
     </div>
-    <div class="col-12 col-span-2 mt-5 cardOther">
+    <div class="lg:basis-1/3 col-span-2 mt-5 cardOther">
       <h2 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Venta de Locales, Oficinas y Plazas de Garaje</h2>
       <MazCard
         :images="images"
@@ -49,6 +49,7 @@
         </template>
       </MazCard>
     </div>
+   
 </template>
 
 <script lang="ts" setup>
@@ -72,6 +73,6 @@
 
 <style scoped>
     .cardOther {
-        display: grid;
+        /* display: grid; */
     }
 </style>

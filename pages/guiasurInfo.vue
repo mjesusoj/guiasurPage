@@ -1,5 +1,5 @@
 <template>
-  <div id="sobre-la-empresa" class="col-12 col-end-6 col-span-4 columns-xl mt-5">
+  <div id="sobre-la-empresa" class="col-end-6 col-span-4 columns-xl mt-5">
     <MazCard :images="['logo-guiasur.jpg']" orientation="square">
       <template #title>
         <h2 style="margin: 0; margin-bottom: 20px">
