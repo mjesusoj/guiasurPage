@@ -2,13 +2,13 @@
     <div id="inmuebles" class="lg:basis-1/3 mt-5">
       <h2 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Oficina en Alquiler o Venta</h2>
       <MazCard
-        :images="['logo-guiasur.jpg']"
+        :images="['./torneo-oficina/imagen.webp']"
         :height="200"
         zoom
       >
         <template #title>
           <h3 style="margin: 0">
-            Oficina (Alquiler / Venta)
+            🏢 Oficina (Alquiler / Venta)
           </h3>
         </template>
         <template #subtitle>
@@ -19,13 +19,13 @@
           <template #content>
             <p class="maz-text-muted" style="margin: 0; margin-top: 20px">
               Este inmueble es una oficina ubicada en el parque empresarial de Torneo en Sevilla. Tiene 100m2 
-              y muy buena localización
+              y dispone de muy buena localización, ya que se puede llegar a través de la SE-30 y la SE-20.
             </p>
         </template>
       </MazCard>
     </div>
     <div class="lg:basis-1/3 col-span-2 mt-5 cardOther">
-      <h2 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Venta de Locales, Oficinas y Plazas de Garaje</h2>
+      <h2 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Locales, Oficinas y Plazas de Garaje</h2>
       <MazCard
         :images="images"
         :height="200"
@@ -33,7 +33,7 @@
       >
         <template #title>
           <h3 style="margin: 0">
-            Venta de Locales Comerciales, Oficinas y Plazas de Garaje en Arahal
+            🏢 Venta de Locales Comerciales, Oficinas y Plazas de Garaje en Arahal
           </h3>
         </template>
         <template #subtitle>
