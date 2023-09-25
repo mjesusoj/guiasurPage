@@ -8,17 +8,15 @@
             :state="state"
             @submit.prevent="submit"
         >
-            <UFormGroup label="Nombre y apellidos" name="name">
-                <UInput v-model="state.name" />
-            </UFormGroup>
+            <MazInput v-model="state.name" label="Nombre y Apellidos"/>
+            <MazInput v-model="state.email" label="Correo electrónico" required />
 
-            <UFormGroup label="Correo electrónico" name="email">
-                <UInput v-model="state.email" />
-            </UFormGroup>
-            
-            <UFormGroup label="Escriba aquí lo que desea" name="textarea">
-                <UTextarea color="primary" variant="outline" />
-            </UFormGroup>
+            <MazTextarea
+                v-model="textArea"
+                name="comment"
+                id="comment"
+                label="Escriba aquí lo que desea"
+            />
 
             <MazPhoneNumberInput
                 v-model="phoneNumber"
@@ -29,9 +27,7 @@
                 @update="results = $event"
             />
 
-            <UButton class="mt-2" type="submit">
-                Enviar formulario
-            </UButton>
+            <MazBtn class="mt-2" color="info" type="submit" block>Enviar formulario</MazBtn>
         </UForm>
     </div>
 </template>
@@ -41,10 +37,15 @@
     import type { FormError } from '@nuxthq/ui/dist/runtime/types'
     import { trackEvent } from "@aptabase/web";
 
+    import MazBtn from 'maz-ui/components/MazBtn'
+    import MazInput from 'maz-ui/components/MazInput'
+    import MazTextarea from 'maz-ui/components/MazTextarea'
     import MazPhoneNumberInput from 'maz-ui/components/MazPhoneNumberInput'
 
     const phoneNumber = ref('')
+    const textArea = ref()
     const results = ref('')
+    const form = ref()
 
     const state = ref({
         name: undefined,
@@ -53,11 +54,9 @@
 
     const validate = (state: any): FormError[] => {
         const errors = []
-        if (!state.name && !state.email) errors.push({ path: 'name', message: 'Requerido' }, { path: 'email', message: 'Requerido' })
+        if (!state.email) errors.push({ path: 'email', message: 'Requerido' })
         return errors
     }
-
-    const form = ref()
 
     async function submit () {
         console.log(form);
@@ -72,6 +71,6 @@
 
 <style scoped>
     .form > div {
-        margin: 1%;
+        margin: 2%;
     }
 </style>
