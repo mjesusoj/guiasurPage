@@ -6,20 +6,21 @@
             ref="form"
             :validate="validate"
             :state="state"
-            @submit.prevent="submit"
+            action="https://submit-form.com/RQtlPjLt"
         >
             <MazInput v-model="state.name" label="Nombre y Apellidos"/>
             <MazInput v-model="state.email" label="Correo electrónico" required />
 
             <MazTextarea
                 v-model="textArea"
-                name="comment"
-                id="comment"
+                name="message"
+                id="message"
                 label="Escriba aquí lo que desea"
             />
 
             <MazPhoneNumberInput
                 v-model="phoneNumber"
+                name="phoneNumber"
                 show-code-on-list
                 color="info"
                 :max="9"
