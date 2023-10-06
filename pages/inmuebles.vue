@@ -2,7 +2,7 @@
     <div id="inmuebles" class="lg:basis-1/3 mt-5">
       <h2 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Oficina en Alquiler o Venta</h2>
       <MazCard
-        :images="['./torneo-oficina/imagen.webp']"
+        :images="imagesTorneo"
         :height="200"
         zoom
       >
@@ -27,7 +27,7 @@
     <div class="lg:basis-1/3 col-span-2 mt-5 cardOther">
       <h2 class="text-3xl text-blue-300 font-bold bg-clip-text mb-4">Locales, Oficinas y Plazas de Garaje</h2>
       <MazCard
-        :images="images"
+        :images="imagesCorredera"
         :height="200"
         zoom
       >
@@ -57,14 +57,24 @@
 
   import { trackEvent } from "@aptabase/web";
 
-  const images = [
+  const imagesTorneo = [
+      { src: './torneo-oficina/oficina1.jpg', alt: '' },
+      { src: './torneo-oficina/oficina2.jpg', alt: '' },
+      { src: './torneo-oficina/oficina3.jpg', alt: '' },
+      { src: './torneo-oficina/oficina4.jpg', alt: '' },
+      { src: './torneo-oficina/oficina5.jpg', alt: '' },
+      { src: './torneo-oficina/oficina6.jpg', alt: '' },
+      { src: './torneo-oficina/oficina7.jpg', alt: '' }
+  ]
+
+  const imagesCorredera = [
     { src: './corredera-images/corredera-1.jpg', alt: 'Fachada' },
     { src: './corredera-images/corredera-2.jpg', alt: 'Planta Garaje -1' },
     { src: './corredera-images/corredera-3.jpg', alt: 'Planta Garaje -2' },
     { src: './corredera-images/corredera-4.jpg', alt: 'Planta Garaje -3' },
     { src: './corredera-images/corredera-5.jpg', alt: 'Azotea' },
     { src: './corredera-images/corredera-6.jpg', alt: 'Azotea 2' },
-    { src: './corredera-images/corredera-7.jpg', alt: 'Azotea 3' },
+    { src: './corredera-images/corredera-7.jpg', alt: 'Azotea 3' }
   ]
 
   trackEvent("app_started");
