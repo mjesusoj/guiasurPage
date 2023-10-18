@@ -2,9 +2,13 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxthq/ui',
-    '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@nuxtjs/tailwindcss',
+    '~/modules/sitemap',
   ],
+  sitemap: {
+    hostname: 'https://guiasurinmobiliaria.vercel.app/'
+  },
   css: [
     'maz-ui/css/main.css',
   ],
@@ -14,5 +18,5 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: ''
   },
-  devtools: { enabled: true },
+  devtools: { enabled: true }
 })

@@ -13,7 +13,8 @@
     "@nuxthq/ui": "^2.7.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.17.3",
-    "nuxt": "^3.6.5"
+    "nuxt": "^3.6.5",
+    "sitemap": "^7.1.1"
   },
   "dependencies": {
     "@aptabase/web": "^0.1.3",
