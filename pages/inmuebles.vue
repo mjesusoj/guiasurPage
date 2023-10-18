@@ -58,13 +58,13 @@
   import { trackEvent } from "@aptabase/web";
 
   const imagesTorneo = [
-      { src: './torneo-oficina/oficina1.jpg', alt: '' },
-      { src: './torneo-oficina/oficina2.jpg', alt: '' },
-      { src: './torneo-oficina/oficina3.jpg', alt: '' },
-      { src: './torneo-oficina/oficina4.jpg', alt: '' },
-      { src: './torneo-oficina/oficina5.jpg', alt: '' },
-      { src: './torneo-oficina/oficina6.jpg', alt: '' },
-      { src: './torneo-oficina/oficina7.jpg', alt: '' }
+      { src: './torneo-oficina/oficina1.jpg', alt: 'Entrada Oficina'    },
+      { src: './torneo-oficina/oficina2.jpg', alt: 'Interior Oficina'   },
+      { src: './torneo-oficina/oficina3.jpg', alt: 'Interior Oficina 2' },
+      { src: './torneo-oficina/oficina4.jpg', alt: 'Interior Oficina 3' },
+      { src: './torneo-oficina/oficina5.jpg', alt: 'Exterior Oficina'   },
+      { src: './torneo-oficina/oficina6.jpg', alt: 'Exterior Oficina 2' },
+      { src: './torneo-oficina/oficina7.jpg', alt: 'Exterior Oficina 3' }
   ]
 
   const imagesCorredera = [
@@ -72,7 +72,7 @@
     { src: './corredera-images/corredera-2.jpg', alt: 'Planta Garaje -1' },
     { src: './corredera-images/corredera-3.jpg', alt: 'Planta Garaje -2' },
     { src: './corredera-images/corredera-4.jpg', alt: 'Planta Garaje -3' },
-    { src: './corredera-images/corredera-5.jpg', alt: 'Azotea' },
+    { src: './corredera-images/corredera-5.jpg', alt: 'Azotea'   },
     { src: './corredera-images/corredera-6.jpg', alt: 'Azotea 2' },
     { src: './corredera-images/corredera-7.jpg', alt: 'Azotea 3' }
   ]

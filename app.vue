@@ -14,7 +14,7 @@
     meta: [
       { 
         name: 'description', 
-        content: 'Oficina de 100m2 en Parque Empresarial Torneo, Sevilla y venta de locales comerciales, oficinas y plazas de garaje en Arahal, Sevilla' 
+        content: 'Alquiler de Oficina de 100m2 en Parque Empresarial Torneo, Sevilla y Venta de Locales Comerciales, Oficinas y Plazas de Garaje en Arahal (Sevilla)' 
       }
     ]
   })
