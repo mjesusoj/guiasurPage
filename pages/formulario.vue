@@ -30,6 +30,7 @@
 
             <MazBtn class="mt-2" color="info" type="submit" block>Enviar formulario</MazBtn>
         </UForm>
+        <button class="btn btn-primary">Button</button>
     </div>
 </template>
                 

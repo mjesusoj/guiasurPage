@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxthq/ui',
+    '@nuxt/ui',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     '~/modules/sitemap',

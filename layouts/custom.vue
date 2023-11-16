@@ -41,10 +41,11 @@
         <slot name="formulario-de-contacto" />
       </div>
     </main>
-    <footer class="">
-      <slot name="footer">
-        <p class="text-2xl text-gray-400 px-3 py-2 rounded-md font-bold bg-clip-text text-center mt-5 mb-5">©️ Guiasur XXI 2023</p>
-      </slot>
+    <footer class="m-5">
+      <UDivider
+        label="©️ Guiasur XXI 2023"
+        :ui="{ label: 'text-cool-50 dark:text-cool-200 text-xl' }"
+      />
     </footer>
   </div>
 </template>

@@ -12,6 +12,7 @@
       <template #formulario-de-contacto>
         <formulario />
       </template>
+      <template #footer />
     </NuxtLayout>
   </div>
 </template>

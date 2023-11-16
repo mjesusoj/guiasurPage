@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "guiasur-nuxt-app",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -9,7 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
+    "@nuxt/devtools": "^1.0.2",
     "@nuxthq/ui": "^2.7.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.17.3",
@@ -18,7 +18,9 @@
   },
   "dependencies": {
     "@aptabase/web": "^0.1.3",
+    "@nuxt/ui": "^2.10.0",
     "@nuxtjs/color-mode": "^3.3.0",
+    "daisyui": "^4.0.9",
     "libphonenumber-js": "^1.10.44",
     "maz-ui": "^3.9.0"
   }
